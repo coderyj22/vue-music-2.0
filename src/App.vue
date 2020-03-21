@@ -1,19 +1,48 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <my-header/>
+    <main-tab-bar :bars="bars"/>
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
   </div>
 </template>
 
-<style lang="stylus">
-#app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+<script>
+import MainTabBar from "./base/maintabbar/MainTabBar";
+import MyHeader from "./base/myheader/MyHeader";
+
+export default {
+  name: 'App',
+  components: {
+    MainTabBar,
+    MyHeader
+  },
+  data() {
+    return {
+      bars: [
+        {
+          router: 'recommend',
+          text: "推荐"
+        },
+        {
+          router: 'singer',
+          text: "歌手"
+        },
+        {
+          router: 'rank',
+          text: "排行"
+        },
+        {
+          router: 'search',
+          text: "搜索"
+        },
+      ]
+    }
+  }
+}
+</script>
+
+<style scoped lang="stylus">
+
 </style>
