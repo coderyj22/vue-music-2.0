@@ -5,18 +5,22 @@
     <keep-alive>
       <router-view/>
     </keep-alive>
+    <player></player>
   </div>
 </template>
 
 <script>
 import MainTabBar from "./base/maintabbar/MainTabBar";
 import MyHeader from "./base/myheader/MyHeader";
+import Player from "./components/player/Player";
+
 
 export default {
   name: 'App',
   components: {
     MainTabBar,
-    MyHeader
+    MyHeader,
+    Player
   },
   data() {
     return {

@@ -6,7 +6,7 @@ export const commonParams = {
   platform: 'yqq.json',
   inCharset: 'utf-8',
   outCharset: 'utf-8',
-  format: 'jsonp',
+  format: 'json',
   needNewCode: 0
 };
 

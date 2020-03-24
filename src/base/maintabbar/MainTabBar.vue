@@ -26,6 +26,8 @@ export default {
     height 4.4rem
     line-height 4.4rem
     background-color $color-background
+    position: relative;
+    z-index 10
     .bar-item
       flex 1
       font-size 1.4rem

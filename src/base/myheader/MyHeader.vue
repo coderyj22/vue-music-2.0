@@ -4,6 +4,9 @@
       <img src="./logo@2x.png" alt="">
     </div>
     <div class="text">YJ 音乐</div>
+    <router-link to="/profile" class="profile" tag="div">
+      <i class="icon-profile"></i>
+    </router-link>
   </div>
 </template>
 
@@ -19,7 +22,9 @@ export default {
     height 4.4rem
     text-align center
     font-size: 0
-
+    position relative
+    z-index 10
+    background-color $color-background
     .icon
       display inline-block
       margin: 0.6rem 0.9rem 0 0
@@ -35,4 +40,14 @@ export default {
       vertical-align top
       font-size $font-size-large
       color $color-theme
+    .profile
+      position absolute
+      right 0
+      top 1.2rem
+      margin-right 1rem
+      .icon-profile
+        font-size: 2rem
+        padding 1rem
+        color $color-theme
+
 </style>
