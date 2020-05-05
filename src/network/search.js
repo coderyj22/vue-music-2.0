@@ -2,7 +2,7 @@ import axios from 'axios'
 import {commonParams} from "./config";
 
 export function getHotKey() {
-	const url = '/api/getHotKey'
+	const url = '/getHotKey'
 	const data = {
 		data: {
 			"comm": {
@@ -36,7 +36,7 @@ export function getHotKey() {
 }
 
 export function Search(query, page, num, zhida) {
-	const url = '/api/getSearch'
+	const url = '/getSearch'
 	const data = {
 		ct: 24,
 		qqmusic_ver: 1298,

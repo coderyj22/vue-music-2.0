@@ -2,7 +2,7 @@ import {commonParams} from "./config";
 import axios from "axios";
 
 export function getSingers() {
-  const url = '/api/getSingers'
+  const url = '/getSingers'
 
   const data = Object.assign({}, commonParams, {
     channel: 'singer',
@@ -23,7 +23,7 @@ export function getSingers() {
 }
 
 export function getSingerDetail(singermid,begin,end) {
-  const url = '/api/getSingerDetail'
+  const url = '/getSingerDetail'
   const data = Object.assign({}, commonParams, {
     g_tk: 1664029744,
     hostUin: 0,
@@ -44,7 +44,7 @@ export function getSingerDetail(singermid,begin,end) {
 }
 
 export function getvkey(songmid) {
-  const url = '/api/getSongvkey'
+  const url = '/getSongvkey'
   const data = Object.assign({},commonParams,{
     g_tk: 5381,
     loginUin: 0,
@@ -65,7 +65,7 @@ export function getvkey(songmid) {
 }
 
 export function getSongLyric(songId) {
-  const url = '/api/getSongLyric'
+  const url = '/getSongLyric'
   const data = Object.assign({}, commonParams, {
     pcachetime: 1578297556315,
     songmid: songId,

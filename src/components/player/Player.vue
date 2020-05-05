@@ -400,6 +400,7 @@ export default {
 			}
 			const left = this.currentShow === 'cd' ? 0 : -window.innerWidth
 			const width = Math.min(0, Math.max(-window.innerWidth, left + this.touch.deltaX))
+			console.log(width);
 			this.touch.percent = Math.abs(width / window.innerWidth)
 			this.$refs.lyricList.$el.style['transform'] = `translate3d(${width}px, 0, 0)`
 			this.$refs.lyricList.$el.style['transitionDuration'] = `0`

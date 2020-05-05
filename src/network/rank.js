@@ -2,7 +2,7 @@ import axios from 'axios'
 import {commonParams} from "./config";
 
 export function getTopList() {
-	const url = '/api/getTopList'
+	const url = '/getTopList'
 
 	const data = Object.assign({}, commonParams, {
 		platform: 'h5',
@@ -20,7 +20,7 @@ export function getTopList() {
 
 // 获取排行榜的歌曲
 export function getMusicList(topid) {
-	const url = '/api/getMusicList'
+	const url = '/getMusicList'
 
 	const data = Object.assign({}, commonParams, {
 		page: 'detail',

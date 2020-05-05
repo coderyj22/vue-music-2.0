@@ -2,7 +2,7 @@ import {commonParams} from "./config";
 import axios from 'axios'
 
 export function getRecommend() {
-  const url = '/api/getSlider';
+  const url = '/getSlider';
 
   const data = Object.assign({}, commonParams, {
     g_tk: 802595960,
@@ -48,7 +48,7 @@ export function getRecommend() {
 
 // 获取歌单歌曲
 export function getSongList(disstid) {
-  const url = '/api/getSongList'
+  const url = '/getSongList'
   const data = Object.assign({},commonParams,{
     g_tk: 2064441524,
     loginUin: 1052670316,
