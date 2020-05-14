@@ -3,16 +3,16 @@ import VueRouter from "vue-router";
 
 Vue.use(VueRouter);
 
-const Recommend = () => import(/* webpackChunkName: "recommend&&singer&&rank" */'views/recommend/Recommend')
-const Singer = () => import(/* webpackChunkName: "recommend&&singer&&rank" */'views/singer/Singer')
-const Rank = () => import(/* webpackChunkName: "recommend&&singer&&rank" */'views/rank/Rank')
+const Recommend = () => import(/* webpackChunkName: "recommend&&singer&&rank" */'../views/recommend/Recommend')
+const Singer = () => import(/* webpackChunkName: "recommend&&singer&&rank" */'../views/singer/Singer')
+const Rank = () => import(/* webpackChunkName: "recommend&&singer&&rank" */'../views/rank/Rank')
 
-const Search = () => import(/* webpackChunkName: "search&&singerdetail" */'views/search/Search')
-const SingerDetail = () => import(/* webpackChunkName: "search&&singerdetail" */'components/singerdetail/SingerDetail')
+const Search = () => import(/* webpackChunkName: "search&&singerdetail" */'../views/search/Search')
+const SingerDetail = () => import(/* webpackChunkName: "search&&singerdetail" */'../components/singerdetail/SingerDetail')
 
-const Disc = () => import(/* webpackChunkName: "Disc&&TopList&&Profile" */'components/disc/Disc')
-const TopList = () => import(/* webpackChunkName: "Disc&&TopList&&Profile" */'components/toplist/TopList')
-const Profile = () => import(/* webpackChunkName: "Disc&&TopList&&Profile" */'components/profile/Profile')
+const Disc = () => import(/* webpackChunkName: "Disc&&TopList&&Profile" */'../components/disc/Disc')
+const TopList = () => import(/* webpackChunkName: "Disc&&TopList&&Profile" */'../components/toplist/TopList')
+const Profile = () => import(/* webpackChunkName: "Disc&&TopList&&Profile" */'../components/profile/Profile')
 
 
 // import Recommend from "../views/recommend/Recommend";
